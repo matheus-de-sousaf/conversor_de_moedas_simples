@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container" onload="altPlace()">
+        <input class="inputs" type="number" id="valor" placeholder="Valor em Reais">
+        <select  onchange="altPlace()" class="buttons" id="moedas">
+            <option value="Dólar">Dólar</option>
+            <option value="Euro">Euro</option>
+            <option value="Libra">Libra</option>
+            <option value="Iene">Iene</option>
+        </select>
+        <button class="buttons" id="btn_converter" onclick="Conversor()">Converter</button>
+        <input placeholder="Dollar" class="inputs" type="number" id="res">
+    </div>
+
+
+
+    <script src="./scripts/script.js" type="text/javascript"></script>
+</body>
+
+</html>
