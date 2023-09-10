@@ -10,16 +10,24 @@
 
 <body>
     <div id="container" onload="altPlace()">
-        <input class="inputs" type="number" id="valor" placeholder="Valor em Reais">
-        <select  onchange="altPlace()" class="buttons" id="moedas">
-            <option value="Dólar">Dólar</option>
-            <option value="Euro">Euro</option>
-            <option value="Libra">Libra</option>
-            <option value="Iene">Iene</option>
-        </select>
-        <button class="buttons" id="btn_converter" onclick="Conversor()">Converter</button>
-        <input placeholder="Dollar" class="inputs" type="number" id="res">
+        <h1>Digite o valor em real(BRL) e selecione a moeda para qual deseja converter.</h1>
+        <div>
+            <div>
+                <input class="inputs" type="number" id="valor" placeholder="Valor em Reais">
+                <select onchange="altPlace()" class="buttons" id="moedas">
+                    <option value="Dólar">Dólar</option>
+                    <option value="Euro">Euro</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Iene">Iene</option>
+                </select>
+            </div>
+            <div id="mini_container">
+                <input placeholder="Dólar" class="inputs" type="number" id="res">
+                <button class="buttons" id="btn_converter" onclick="Conversor()">Converter</button>
+            </div>
+        </div>
     </div>
+    <p><i>Cotação das moedas do dia 01/09/2023</i></p>
 
 
 
